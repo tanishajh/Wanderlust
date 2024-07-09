@@ -1,0 +1,38 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<div class="row mt-2">
+    <div class="col-8 offset-2">
+        <br>
+    <h3>Create A New Listing</h3>
+    <form action="/listings" method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+        <input type="text" name="Listing[title]" placeholder="Add a catchy title" class="form-control">
+        </div>
+       <div  class="mb-3">
+       <label for="description" class="form-label">Description</label>
+        <textarea type="text" name="Listing[description]" placeholder="enter description" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+       <label for="image" class="form-label">Image</label>
+        <input type="text" name="Listing[image]" placeholder="Enter image URL/Link"  class="form-control">
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" name="Listing[price]" placeholder="1200"  class="form-control">
+                 </div>
+                 <div class="mb-3 col-md-8">  
+                     <label for="country" class="form-label">Country</label>
+                     <input type="text" name="Listing[country]" placeholder="India" class="form-control">
+                     </div>
+        </div>
+            <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" name="Listing[location]" placeholder="Mumbai" class="form-control">
+            </div>
+       <div>
+        <button class="btn btn-dark add-btn mt-2">Add</button>
+        <br><br>
+    </form>
+    </div>
+</div>
