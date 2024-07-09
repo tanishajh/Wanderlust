@@ -13,7 +13,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb+srv://220101005026:BbaUZ1cHYwfpUnz8@bubblegame.8qnvm.mongodb.net/airbnb");
+  await mongoose.connect("");
 }
 
 app.set("view engine", "ejs");
