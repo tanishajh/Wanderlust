@@ -99,6 +99,8 @@ body{
 .add-btn,.edit-btn{
   background-color: #fe424d !important;
   border: none !important;
+  width: 5rem !important;
+  
 }
 
 /* Show page */

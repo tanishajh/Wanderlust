@@ -13,7 +13,7 @@ main()
   .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("");
+  await mongoose.connect('mongodb://127.0.0.1:27017/mj');
 }
 
 app.set("view engine", "ejs");
@@ -77,5 +77,5 @@ app.delete("/listings/:id", async (req, res) => {
 
 
 app.listen(8000, () => {
-  console.log("server is listening at port http://localhost:8000");
+  console.log("server is listening at port 8000");
 });
