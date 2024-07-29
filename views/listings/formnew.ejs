@@ -7,10 +7,12 @@
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
         <input type="text" name="Listing[title]" placeholder="Add a catchy title" class="form-control" required>
+        <div class="valid-feedback">Title Looks good!</div>
         </div>
        <div  class="mb-3">
        <label for="description" class="form-label">Description</label>
-        <textarea type="text" name="Listing[description]" placeholder="enter description" class="form-control" required></textarea>
+        <textarea type="text" name="Listing[description]" placeholder="Enter description" class="form-control" required></textarea>
+        <div class="invalid-feedback">Add a valid description</div>
         </div>
         <div class="mb-3">
        <label for="image" class="form-label">Image</label>
@@ -19,16 +21,21 @@
         <div class="row">
             <div class="mb-3 col-md-4">
                 <label for="price" class="form-label">Price</label>
-                <input type="number" name="Listing[price]" placeholder="1200"  class="form-control" required >
+                <input  name="Listing[price]" placeholder="1200"  class="form-control" required >
+                <div class="invalid-feedback">Enter a valid price</div>
                  </div>
                  <div class="mb-3 col-md-8">  
                      <label for="country" class="form-label">Country</label>
                      <input type="text" name="Listing[country]" placeholder="India" class="form-control"required >
+                <div class="invalid-feedback">Country name should be valid</div>
+
                      </div>
         </div>
             <div class="mb-3">
         <label for="location" class="form-label">Location</label>
         <input type="text" name="Listing[location]" placeholder="Mumbai" class="form-control"required >
+        <div class="invalid-feedback">Location should be valid</div>
+
             </div>
        <div>
         <button class="btn btn-dark add-btn mt-2">Add</button>
