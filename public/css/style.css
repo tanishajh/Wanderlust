@@ -1,15 +1,16 @@
 /* body */
-body{
-  font-family: "Plus Jakarta Sans",sans-serif !important;
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   display: flex;
   flex-direction: column;
-  min-width:100vh;
+  min-height: 100vh;
 }
 
-.container{
+/* Container to push footer to the bottom */
+.container {
   flex: 1;
+  padding-bottom: 2rem; /* Ensure space for footer */
 }
-
 
 /* Navbar */
 .navbar {
@@ -28,6 +29,21 @@ body{
 }
 
 /* Footer */
+footer {
+  background-color: #ebebeb;
+  padding: 1rem 0;
+}
+
+.f-info {
+  text-align: center;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .f-info-links a {
   text-decoration: none;
   color: #222222;
@@ -37,83 +53,71 @@ body{
   text-decoration: underline;
 }
 
-.f-info-links,.f-info-socials,.f-info-brand {
-  width: 100%;
-    display:flex ;
-    align-items: center;
-    justify-content: center;
+.f-info-socials {
+  margin-bottom: 0.5rem;
 }
-
-
 
 .f-info-socials i {
   margin-right: 1rem;
+  font-size: 1.5rem;
 }
 
-.f-info {
-  text-align: center;
-  height: 8rem;
-  background-color: #ebebeb;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: space-evenly;
+.f-info-brand {
+  margin-bottom: 0.5rem;
 }
-
 
 /* Cards */
-.card{
+.listing-card {
   border: none !important;
   margin-bottom: 2rem;
 }
 
-.card-img-top{
+.card-img-top {
   border-radius: 1rem !important;
   width: 100% !important;
   object-fit: cover !important;
 }
 
-
-.card-body{
+.card-body {
   padding: 0 !important;
 }
 
-.card-text p{
+.card-text p {
   font-weight: 400 !important;
 }
 
-.listing-link{
+.listing-link {
   text-decoration: none;
 }
 
 /* Card-Effect */
-.card-img-overlay{
+.card-img-overlay {
   opacity: 0;
 }
 
-.card-img-overlay:hover{
+.card-img-overlay:hover {
   opacity: 0.2;
-  background-color: white ;
+  background-color: white;
 }
+
 /* Add new listing page */
-.add-btn,.edit-btn{
+.add-btn, .edit-btn {
   background-color: #fe424d !important;
   border: none !important;
   width: 5rem !important;
-  
 }
 
 /* Show page */
-.show-img{
+.show-img {
   height: 30vh;
 }
 
-.btns{
+.btns {
   display: flex;
   margin-bottom: 2rem;
 }
 
-.show-card{
+.show-card {
   padding-left: 0;
   padding-right: 0;
 }
